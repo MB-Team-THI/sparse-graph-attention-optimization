@@ -1,6 +1,6 @@
 # Optimization and Interpretability of Graph Attention Networks for Small Sparse Graph Structures in Automotive Applications
 
-This repository is the official implementation of https://arxiv.org/abs/2305.16196. 
+This repository is the official implementation of [Optimization and Interpretability of Graph Attention Networks for Small Sparse Graph Structures in Automotive Applications](https://ieeexplore.ieee.org/document/10186536) (https://arxiv.org/abs/2305.16196). 
 The implementation of GAT+ is based on the PyTorch Geometric library, enabling users to effortlessly integrate and apply the proposed architecture to a wide range of applications. It is created using the PyTorch Geometric MessagePassing base class [torch_gemetric.nn.conv.MessagePassing](https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.nn.conv.MessagePassing.html#torch_geometric.nn.conv.MessagePassing).
 
 GAT+, a variant of Graph Attention Networks (GATs), enhances training robustness and performance by optimizing gradient flow. In GAT+ the attention scores are computed using the Sofplus activation function instead of LeakyRELU:
@@ -65,3 +65,14 @@ forward (x: Union[Tensor, Tuple[Tensor, Tensor], edge_index: Union[Tensor, Spars
 ```
 Runs the forward pass of the module. 
 - **return_attention_weights** (bool, optional) – If set to True, will additionally return the tuple (edge_index, attention_weights), holding the computed attention weights for each edge. (default: None)
+
+## Citation
+[Optimization and Interpretability of Graph Attention Networks for Small Sparse Graph Structures in Automotive Applications](https://ieeexplore.ieee.org/document/10186536)
+```
+@inproceedings{gatpconv23,
+  author={Neumeier, Marion and Tollkühn, Andreas and Dorn, Sebastian and Botsch, Michael and Utschick, Wolfgang},
+  booktitle={2023 IEEE Intelligent Vehicles Symposium (IV)}, 
+  title={Optimization and Interpretability of Graph Attention Networks for Small Sparse Graph Structures in Automotive Applications}, 
+  year={2023},
+  doi={10.1109/IV55152.2023.10186536}}
+```
