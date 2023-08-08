@@ -2,6 +2,7 @@
 
 This repository is the official implementation of [Optimization and Interpretability of Graph Attention Networks for Small Sparse Graph Structures in Automotive Applications](https://ieeexplore.ieee.org/document/10186536) (https://arxiv.org/abs/2305.16196). 
 The implementation of GAT+ is based on the PyTorch Geometric library, enabling users to effortlessly integrate and apply the proposed architecture to a wide range of applications. It is created using the PyTorch Geometric MessagePassing base class [torch_gemetric.nn.conv.MessagePassing](https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.nn.conv.MessagePassing.html#torch_geometric.nn.conv.MessagePassing).
+Make sure to install PyG (PyTorch Geometric) in advance. You can follow the installation steps provided [here](https://pytorch-geometric.readthedocs.io/en/2.0.1/notes/installation.html).
 
 GAT+, a variant of Graph Attention Networks (GATs), enhances training robustness and performance by optimizing gradient flow. In GAT+ the attention scores are computed using the Sofplus activation function instead of LeakyRELU:
 ```math
